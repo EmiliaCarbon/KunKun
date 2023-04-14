@@ -8,10 +8,10 @@ import argparse
 from os.path import join
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--source-video', type=str, required=True, help='source video absolute path')
-parser.add_argument('-t', '--target-root', type=str, default='./assets', help='target video save path')
-parser.add_argument('-d', '--device', type=str, default='cuda:0', help='cpu or gpu id')
-parser.add_argument('-m', '--model', type=str, default='model/sam_vit_h_4b8939.pth', help='cpu or gpu id')
+parser.add_argument('-s', '--source-video', type=str, required=True, help='要处理视频的绝对路径')
+parser.add_argument('-t', '--target-root', type=str, default='./assets', help='要保存到的目录')
+parser.add_argument('-d', '--device', type=str, default='cuda:0', help="设备号，默认为'cuda:0'")
+parser.add_argument('-m', '--model', type=str, default='model/sam_vit_h_4b8939.pth', help='下载的模型位置')
 args = parser.parse_args()
 
 # define color
