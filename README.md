@@ -1,6 +1,6 @@
 SAM的地址是这个：[https://github.com/facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything)，如何安装以及环境所需要的包都在它的README里面
 
-把main.py放在SAM的工程文件的根目录里，下载好模型参数（我下好放在model目录下了），然后配置好环境就可以用了
+把main.py放在SAM的工程文件的根目录里，下载好模型参数（放在model目录下面），然后配置好环境就可以用了
 
 shell语句如下：
 ```shell
