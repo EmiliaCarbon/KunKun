@@ -44,7 +44,7 @@ if __name__ == '__main__':
     cap_read.release()
 
     device = torch.device(args.device)
-    sam = sam_model_registry["default"](checkpoint=args.model)
+    sam = sam_model_registry["default"](checkpoint=args.model)      # 模型大小设置
     sam.to(device)
     mask_generator = SamAutomaticMaskGenerator(sam)
 
