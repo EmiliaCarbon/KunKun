@@ -10,3 +10,4 @@ python main.py --source-video '源视频路径' --target-root '保存根路径' 
 ```shell
 python main.py --source-video './assets/cxk.mp4' --target-root './assets' --device 'cuda:0' --model './model/sam_vit_h_4b8939.pth'
 ```
+要是显存不够可以下个小点的模型，并把47行的'default'改成对应的参数，比如下了最小的vit_b模型，就改为'vit_b'
